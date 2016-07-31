@@ -20,3 +20,5 @@ const myObjects = [
   {x: -40, y: 20, width: 30, height: 30},
   {x:   0, y:  0, width: 10, height:  5}
 ]
+
+// source: http://marijnhaverbeke.nl/talks/es6_falsyvalues2015/exercises/#Improve_this_code 
