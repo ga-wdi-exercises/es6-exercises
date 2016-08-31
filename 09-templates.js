@@ -4,7 +4,6 @@
 
 //     There are 4 people on the tooling team.
 //     Their names are Jennie, Ronald, Martin, Anneli.
-//     2 of them have a senior role.
 
 const teamName = "tooling"
 const people = [{name: "Jennie", role: "senior"},
