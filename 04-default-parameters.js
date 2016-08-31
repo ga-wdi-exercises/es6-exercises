@@ -5,7 +5,7 @@
 function Car(make, model, wheels){
   this.make = make
   this.model = model
-  this.wheels = wheels | 4
+  this.wheels = wheels || 4
 }
 
 let honda = new Car("Honda", "Civic")
