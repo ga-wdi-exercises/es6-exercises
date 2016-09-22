@@ -7,10 +7,8 @@
 // Do you know the solution for such situations in ES5? Does ES6 provide a
 // cleaner solution?
 
-"use strict"
-
 var callbacks = []
-for (var i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
   callbacks.push(function() { console.log(i) })
 }
 

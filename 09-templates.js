@@ -11,7 +11,12 @@ const people = [{name: "Jennie", role: "senior"},
                 {name: "Martin", role: "senior"},
                 {name: "Anneli", role: "junior"}]
 
-let message = YOUR_CODE_HERE
+let names = people.map(function (person) {
+  return person.name
+}).join(", ")
+
+let message = `There are ${people.length} people on the tooling team.
+Their names are ${names}.`
 
 console.log(message)
 

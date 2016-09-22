@@ -1,4 +1,6 @@
-// Write an expression using higher-order array methods (say, filter and reduce)
+// TODO: calculate the total cost for each machine in the inventory
+
+// Hint: it might be helpful to use higher-order array methods (say, filter, map, and reduce)
 // to compute the total value of the machines in the inventory array.
 
 const inventory = [
@@ -9,7 +11,10 @@ const inventory = [
   {type:   "machine", value:   77}
 ]
 
-let totalMachineValue = YOUR_CODE_HERE
+let totalMachineValue = inventory
+    .filter( product => product.type === "machine" )
+    .map( product => product.value )
+    .reduce( (prev, curr) => prev + curr )
 
 console.log(totalMachineValue)
 
