@@ -2,21 +2,28 @@
 // || operator:
 
 
-function Car(make, model, wheels){
-  this.make = make
-  this.model = model
-  this.wheels = wheels || 4
+var myRide = {
+  make: "Ford",
+  model: "Model T",
+  year: 1959,
+  location: "the Office",
+  driveTo: function ( place ) {
+    this.location = place || "Home"
+  }
 }
 
-let honda = new Car("Honda", "Civic")
-honda.wheels
+myRide.driveTo("Walmart")
+myRide.location // "Walmart"
 
 // vs...
 
-let jalopy = new Car("Ford","Model T",0)
-jalopy.wheels
+myRide.driveTo()
+myRide.location // "Home"
 
-// Because 0 is a falsy value in JavaScript, 4 is used.
-// Convert the constructor function to use correct optional parameters
+
+
+// TODO: Convert the driveTo method to use correct optional parameters
+
+
 // Bonus! Can you think of a way to handle falsy values and the || operator?
 // with ES5 style optional arguments?
